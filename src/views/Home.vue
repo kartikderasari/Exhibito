@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-lazy>
+    <v-container fluid>
+      <v-row class="py-15 half-bg">
+        <HomeCard />
+      </v-row>
+    </v-container>
+  </v-lazy>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import HomeCard from "@/components/HomeCard.vue";
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  components: { HomeCard },
+};
 </script>
+
+<style scoped>
+.half-bg {
+  background: linear-gradient(
+    to bottom,
+    #f5f5f5 0%,
+    #f5f5f5 50%,
+    white 50%,
+    white 100%
+  );
+}
+</style>

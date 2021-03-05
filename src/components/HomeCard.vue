@@ -1,11 +1,11 @@
 <template>
   <v-container class="my-5">
-    <v-card class="py-15 px-5 rounded-xl" outlined elevation="3">
+    <v-card class="py-15 px-5 rounded-xl" outlined elevation="2">
       <v-row align="center" justify="center">
         <v-col cols="10" md="4" lg="4" sm="10" class="d-flex justify-center">
           <v-img
             class="rounded-circle"
-            src="@/assets/profile.png"
+            src="@/assets/profile.jpg"
             max-width="300"
             max-height="300"
           >
@@ -43,7 +43,10 @@
             </v-btn>
           </v-card-actions>
           <v-card-actions>
-            <v-btn color="primary" elevation="0" text>Let's Connect</v-btn>
+            <v-btn color="teal" elevation="0" outlined>About</v-btn>
+            <v-btn color="primary" elevation="0" text
+              >Hire Me <v-icon>mdi-open-in-new</v-icon>
+            </v-btn>
           </v-card-actions>
         </v-col>
       </v-row>

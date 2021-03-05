@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="white">
+  <v-app-bar app color="white" flat dense>
     <div class="headline text-no-wrap" style="width: 250px;">
       <router-link
         class="font-weight-medium teal--text text-decoration-none"

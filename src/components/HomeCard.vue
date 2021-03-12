@@ -1,10 +1,10 @@
 <template>
   <v-main>
     <v-container style="position: relative; z-index:1" fluid>
-      <v-row class="bg-overlay bg-overlay2">
+      <v-row :class="bgClass">
         <v-container>
           <v-row align="center">
-            <v-col class="my-15 pt-15" cols="12" lg="9" md="6" sm="12">
+            <v-col class="my-10 pt-10 pt-5" cols="12" lg="9" md="6" sm="12">
               <v-card flat color="transparent">
                 <v-card-text class="py-0 title font-weight-normal">
                   Hello, I'm Kartik! <br />
@@ -12,11 +12,14 @@
                 </v-card-text>
                 <v-card-title
                   class="py-0 font-weight-medium headline teal--text text--darken-2"
-                  >Web & Community Building!
+                >
+                  <span style="border-bottom:6px solid #64B5F6;">
+                    Web & Community Building!
+                  </span>
                 </v-card-title>
-                <v-card-actions class="ml-2">
-                  <v-btn class="blue mr-2 white--text">About</v-btn>
-                  <v-btn class="blue--text" outlined>Let's Connect</v-btn>
+                <v-card-actions class="ml-2 mt-2">
+                  <v-btn class="blue mr-2 white--text px-5">About</v-btn>
+                  <v-btn class="blue--text px-5" outlined>Let's Connect</v-btn>
                 </v-card-actions>
                 <v-card-actions>
                   <v-btn icon>
@@ -44,7 +47,7 @@
               <v-img
                 class="rounded-circle"
                 src="@/assets/profile.jpg"
-                width="230"
+                max-width="250"
               >
               </v-img>
             </v-col>
@@ -70,13 +73,32 @@
 
 .bg-overlay2::after {
   content: "";
-  background: url("../assets/Gradient_below.svg") no-repeat;
+  background: url("../assets/gr_below.svg") no-repeat;
   background-size: 27vw 26vh;
   position: absolute;
-  bottom: -20vh;
+  bottom: -18vh;
   left: 0px;
   width: 27vw;
   height: 26vh;
   z-index: -2;
 }
 </style>
+
+<script>
+export default {
+  data: () => {
+    return {
+      bgClass: null,
+    };
+  },
+  watch: {
+    bgClass: function() {
+      if (screen.width < 980) {
+        this.bgClass = "";
+      } else {
+        this.bgClass = "bg-overlay bg-overlay2";
+      }
+    },
+  },
+};
+</script>

@@ -1,7 +1,7 @@
 <template>
-  <v-dialog v-model="dialog" width="500">
+  <v-dialog id="ddialog" v-model="dialog" width="500" retain-focus>
     <template v-slot:activator="{ on, attrs }">
-      <v-card class="rounded-xl" outlined flat v-bind="attrs" v-on="on">
+      <v-card class="rounded-xl" id="ad" outlined flat v-bind="attrs" v-on="on">
         <v-card-text>
           <v-row class="pa-2" justify="center">
             <v-col cols="4" align="center">
@@ -58,3 +58,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.v-card--link:focus:before {
+  opacity: 0;
+}
+</style>

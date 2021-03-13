@@ -7,7 +7,7 @@
             <v-col class="my-10 pt-10 pt-5" cols="12" lg="9" md="6" sm="12">
               <v-card flat color="transparent">
                 <v-card-text class="py-0 title font-weight-normal">
-                  Hello, I'm Kartik! <br />
+                  Hello, I'm {{ userData.name }}! <br />
                   Talk to me about
                 </v-card-text>
                 <v-card-title
@@ -18,26 +18,37 @@
                   </span>
                 </v-card-title>
                 <v-card-actions class="ml-2 mt-2">
-                  <v-btn class="blue mr-2 white--text px-5">About</v-btn>
-                  <v-btn class="blue--text px-5" outlined>Let's Connect</v-btn>
+                  <v-btn class="blue mr-2 white--text px-5" to="/about"
+                    >About</v-btn
+                  >
+                  <v-btn
+                    class="blue--text px-5"
+                    outlined
+                    :href="'mailto:' + userData.email"
+                    >Let's Connect</v-btn
+                  >
                 </v-card-actions>
                 <v-card-actions>
-                  <v-btn icon>
+                  <v-btn
+                    icon
+                    :href="'mailto:' + userData.email"
+                    target="_blank"
+                  >
                     <v-icon>mdi-email</v-icon>
                   </v-btn>
-                  <v-btn icon>
+                  <v-btn icon :href="userData.Facebook" target="_blank">
                     <v-icon>mdi-facebook</v-icon>
                   </v-btn>
-                  <v-btn icon>
+                  <v-btn icon :href="userData.Instagram" target="_blank">
                     <v-icon>mdi-instagram</v-icon>
                   </v-btn>
-                  <v-btn icon>
+                  <v-btn icon :href="userData.LinkedIn" target="_blank">
                     <v-icon>mdi-linkedin</v-icon>
                   </v-btn>
-                  <v-btn icon>
+                  <v-btn icon :href="userData.GitHub" target="_blank">
                     <v-icon>mdi-github</v-icon>
                   </v-btn>
-                  <v-btn icon>
+                  <v-btn icon :href="userData.Twitter" target="_blank">
                     <v-icon>mdi-twitter</v-icon>
                   </v-btn>
                 </v-card-actions>
@@ -46,7 +57,7 @@
             <v-col cols="12" lg="3" md="6" sm="12">
               <v-img
                 class="rounded-circle"
-                src="@/assets/profile.jpg"
+                :src="userData.profilePhotoURL"
                 max-width="250"
               >
               </v-img>
@@ -89,8 +100,10 @@ export default {
   data: () => {
     return {
       bgClass: null,
+      loading: false,
     };
   },
+  props: ["userData"],
   watch: {
     bgClass: function() {
       if (screen.width < 980) {

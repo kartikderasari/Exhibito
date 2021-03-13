@@ -6,16 +6,20 @@
         to="/"
         style="width: 250px;"
       >
-        Kartik Derasari
+        {{ userData.name }}
       </router-link>
     </div>
 
     <v-tabs right>
       <v-tab to="/">Home</v-tab>
       <v-tab to="about">About</v-tab>
-      <v-tab to="resume">Resume</v-tab>
-      <v-tab to="work">Work</v-tab>
-      <v-tab to="contact">Contact</v-tab>
+      <v-tab to="workspace">Workspace</v-tab>
     </v-tabs>
   </v-app-bar>
 </template>
+
+<script>
+export default {
+  props: ["userData"],
+};
+</script>

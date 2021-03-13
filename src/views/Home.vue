@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <HomeCard />
+    <HomeCard :userData="userData" />
   </v-main>
 </template>
 
@@ -9,5 +9,6 @@ import HomeCard from "@/components/HomeCard.vue";
 
 export default {
   components: { HomeCard },
+  props: ["userData"],
 };
 </script>

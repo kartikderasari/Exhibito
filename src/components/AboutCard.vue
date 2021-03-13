@@ -15,25 +15,28 @@
         <v-col cols="12" sm="12" md="12" lg="8">
           <v-card-text class="pl-0 ml-0">
             <h3 class="py-0 font-weight-medium title teal--text text--darken-2">
-              Some text Some text
+              Hello, I'm {{ userData.name }}!
             </h3>
-            I’m a Final Year Computer Engineering Student passionate about
-            Developer Community Building & creating impacts through building
-            relationships, delivering Events and Community Programs with
-            Developer Advocacy. It has been about three years since I started my
-            journey around Communities & my passion has always pushed me more to
-            bring people together to drive Advocacy and Adoption efficiencies.
-            With this enthusiasm, I have been leading a bunch of Communities for
-            Developers such as IEEE Student Branch, Google Developer Student
-            Club, Google Developers Group, and IEEE India Council Industry
-            Relations Team.
+            {{ userData.about }}
           </v-card-text>
           <v-card-actions class="pl-0 py-0">
-            <v-btn class="blue white--text px-5">See Projects</v-btn>
-            <v-btn outlined class="px-5" color="blue">Contact</v-btn>
+            <v-btn class="blue white--text px-5" to="workspace">See Work</v-btn>
+            <v-btn
+              outlined
+              class="px-5"
+              color="blue"
+              :href="'mailto:' + userData.email"
+              >Contact</v-btn
+            >
           </v-card-actions>
         </v-col>
       </v-row>
     </v-card>
   </v-container>
 </template>
+
+<script>
+export default {
+  props: ["userData"],
+};
+</script>

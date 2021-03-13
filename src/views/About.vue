@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row class="half-bg">
       <v-col class="my-5" cols="12">
-        <AboutCard />
+        <AboutCard :userData="userData" />
       </v-col>
     </v-row>
     <v-row>
@@ -18,7 +18,7 @@
   </v-container>
 </template>
 
-<style>
+<style scoped>
 .half-bg {
   background: linear-gradient(
     to bottom,
@@ -36,5 +36,6 @@ import TechStack from "@/components/TechStack.vue";
 import EducationTimeline from "@/components/EducationTimeline.vue";
 export default {
   components: { AboutCard, TechStack, EducationTimeline },
+  props: ["userData"],
 };
 </script>

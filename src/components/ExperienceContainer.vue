@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <v-card class="py-5 px-8" flat color="transparent">
+    <v-card class="py-10 px-8" flat color="transparent">
       <v-row>
         <v-card-title
           class="pb-3 pl-0 font-weight-medium headline teal--text text--darken-2"
         >
-          Resume
+          Experience
         </v-card-title>
       </v-row>
       <v-row>

@@ -10,7 +10,7 @@
       </router-link>
     </div>
 
-    <v-tabs right>
+    <v-tabs right v-if="this.$vuetify.breakpoint.width > 600">
       <v-tab to="/">Home</v-tab>
       <v-tab to="about">About</v-tab>
       <v-tab to="workspace">Workspace</v-tab>

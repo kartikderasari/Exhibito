@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless>
+  <v-footer padless app absolute>
     <v-container>
       <v-card flat class="grey lighten-4">
         <v-card-title>

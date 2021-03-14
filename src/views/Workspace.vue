@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col class="half-bg my-10" cols="12">
+      <v-col class="half-bg my-16" cols="12">
         <ProjectContainer />
       </v-col>
     </v-row>
@@ -34,8 +34,8 @@ export default {
   background: linear-gradient(
     to bottom,
     white 0%,
-    white 40%,
-    #f5f5f5 40%,
+    white 45%,
+    #f5f5f5 45%,
     #f5f5f5 100%
   );
 }

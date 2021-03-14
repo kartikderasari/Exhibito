@@ -8,11 +8,24 @@
           Projects
         </v-card-title>
       </v-row>
-      <v-row>
+      <v-row v-if="loading">
+        <v-progress-circular
+          class="mx-auto my-10"
+          :size="40"
+          color="primary"
+          indeterminate
+          v-if="loading"
+        ></v-progress-circular>
+      </v-row>
+      <v-row v-if="!loading">
         <v-col>
-          <v-slide-group v-model="model" class="" show-arrows="">
-            <v-slide-item class="mb-10" v-for="n in 6" :key="n">
-              <ProjectCard />
+          <v-slide-group v-model="model" show-arrows>
+            <v-slide-item
+              class="mb-10"
+              v-for="(project, index) in projects"
+              :key="index"
+            >
+              <ProjectCard :project="project" />
             </v-slide-item>
           </v-slide-group>
         </v-col>
@@ -23,10 +36,29 @@
 
 <script>
 import ProjectCard from "@/components/ProjectCard.vue";
+import FDK from "@/config/firebase.js";
 export default {
   data: () => ({
     model: null,
+    projects: null,
+    loading: false,
   }),
   components: { ProjectCard },
+  methods: {
+    readProjectData: function() {
+      this.loading = true;
+      this.projects = [];
+      FDK.firestore()
+        .collection("projects")
+        .get()
+        .then((doc) => {
+          doc.forEach((doc) => this.projects.push(doc.data()));
+        })
+        .then(() => (this.loading = false));
+    },
+  },
+  created: function() {
+    this.readProjectData();
+  },
 };
 </script>

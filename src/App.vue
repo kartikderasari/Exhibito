@@ -6,6 +6,7 @@
       <router-view :userData="userData"> </router-view>
     </v-main>
     <Footer :userData="userData" v-if="!loading" />
+    <BottomNav />
     <v-progress-circular
       class="mx-auto my-15 py-15"
       :size="50"
@@ -20,9 +21,10 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FDK from "@/config/firebase.js";
+import BottomNav from "@/components/BottomNav";
 export default {
   name: "App",
-  components: { Navbar, Footer },
+  components: { Navbar, Footer, BottomNav },
   data: () => ({
     userData: null,
     loading: false,

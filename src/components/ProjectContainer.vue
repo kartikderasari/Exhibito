@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <v-card class="mx-auto px-8" color="transparent" flat>
+    <v-card class="mx-auto" color="transparent" flat>
       <v-row>
         <v-card-title
-          class="py-0 pl-0 font-weight-medium headline teal--text text--darken-2"
+          class="py-0 pl-8 font-weight-medium headline teal--text text--darken-2"
         >
           Projects
         </v-card-title>
@@ -19,9 +19,9 @@
       </v-row>
       <v-row v-if="!loading">
         <v-col>
-          <v-slide-group v-model="model" show-arrows>
+          <v-slide-group v-model="model" show-arrows mandatory>
             <v-slide-item
-              class="mb-10"
+              class="mb-10 pl-3"
               v-for="(project, index) in projects"
               :key="index"
             >

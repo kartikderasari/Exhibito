@@ -17,6 +17,7 @@
                 :src="experience.companyLogoURL"
                 max-width="80"
                 max-height="80"
+                lazy
               ></v-img>
             </v-col>
             <v-col cols="8" class="d-flex flex-column  justify-center">

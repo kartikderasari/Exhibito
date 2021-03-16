@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <v-card class="px-8" flat>
+    <v-card flat>
       <v-row>
         <v-card-title
-          class="pl-0 font-weight-medium headline teal--text text--darken-2"
+          class="pl-8 font-weight-medium headline teal--text text--darken-2"
         >
           Education
         </v-card-title>

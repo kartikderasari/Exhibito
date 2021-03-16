@@ -19,7 +19,7 @@
       <v-row>
         <v-col
           cols="12"
-          sm="10"
+          sm="6"
           md="6"
           lg="4"
           v-for="(experience, index) in experiences"

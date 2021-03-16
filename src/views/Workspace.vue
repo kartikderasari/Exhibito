@@ -5,7 +5,7 @@
         <ExperienceContainer />
       </v-col>
     </v-row>
-    <v-row>
+    <v-row no-gutters>
       <v-col class="half-bg my-16" cols="12">
         <ProjectContainer />
       </v-col>

@@ -1,12 +1,25 @@
 <template>
-  <v-footer padless app absolute>
+  <v-footer padless app absolute class="grey lighten-4">
     <v-container>
-      <v-card flat class="grey lighten-4">
-        <v-card-title>
+      <v-row no-gutters>
+        <v-col
+          class="text-center text-sm-center text-md-start text-lg-start"
+          cols="12"
+          sm="6"
+          md="6"
+          lg="6"
+        >
           <span class="title font-weight-medium grey--text text--darken-1">
             {{ userData.name }}
           </span>
-          <v-spacer></v-spacer>
+        </v-col>
+        <v-col
+          class="text-center text-sm-center text-md-end text-lg-end"
+          cols="12"
+          sm="6"
+          md="6"
+          lg="6"
+        >
           <v-btn icon :href="'mailto:' + userData.email" target="_blank">
             <v-icon>mdi-email</v-icon>
           </v-btn>
@@ -25,9 +38,9 @@
           <v-btn icon :href="userData.Twitter" target="_blank">
             <v-icon>mdi-twitter</v-icon>
           </v-btn>
-        </v-card-title>
-        <v-divider></v-divider>
-        <v-card-text
+        </v-col>
+        <v-col
+          cols="12"
           class="text-center font-weight-medium grey--text text--darken-1"
         >
           <strong
@@ -39,8 +52,8 @@
               >Kartik Derasari</a
             ></strong
           >
-        </v-card-text>
-      </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </v-footer>
 </template>

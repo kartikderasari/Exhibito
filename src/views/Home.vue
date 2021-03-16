@@ -1,7 +1,5 @@
 <template>
-  <v-main>
-    <HomeCard :userData="userData" />
-  </v-main>
+  <HomeCard :userData="userData" />
 </template>
 
 <script>

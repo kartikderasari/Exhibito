@@ -10,7 +10,12 @@
       </v-row>
       <v-row>
         <v-col cols="12" sm="12" md="12" lg="4" class="d-flex align-center">
-          <v-img class="rounded-lg" src="../assets/new.jpg"> </v-img>
+          <v-img
+            class="rounded-lg"
+            src="https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Profile/Cover-Image.svg?token=AJSPHONSK4ENTBWRBGVL2M3AK6VR4"
+            lazy
+          >
+          </v-img>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="8">
           <v-card-text class="pl-0 ml-0">
@@ -20,10 +25,14 @@
             {{ userData.about }}
           </v-card-text>
           <v-card-actions class="pl-0 py-0">
-            <v-btn class="blue white--text px-5" to="workspace">See Work</v-btn>
+            <v-btn
+              class="blue white--text px-2 px-sm-5 px-md-5 px-lg-5"
+              to="workspace"
+              >See Work</v-btn
+            >
             <v-btn
               outlined
-              class="px-5"
+              class="px-2 px-sm-5 px-md-5 px-lg-5"
               color="blue"
               :href="'mailto:' + userData.email"
               >Contact</v-btn

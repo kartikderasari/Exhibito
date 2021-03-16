@@ -15,9 +15,14 @@
           class="font-weight-medium pl-0 headline teal--text text--darken-2"
           >Tech-Stack</v-card-title
         >
-        <v-card-text class="d-flex justify-center align-center">
+        <v-card-text class="d-flex justify-center flex-wrap align-center">
           <div v-for="(skill, index) in skills" :key="index">
-            <v-img class="ma-2" :src="skill.skillLogoURL" width="4vw"></v-img>
+            <v-img
+              class="ma-2"
+              :src="skill.skillLogoURL"
+              width="6vh"
+              lazy
+            ></v-img>
           </div>
         </v-card-text>
       </v-row>

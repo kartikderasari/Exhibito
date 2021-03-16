@@ -1,17 +1,17 @@
 <template>
   <v-container fluid>
     <v-row
-      class="mb-15 mb-sm-15 mb-md-15 mb-lg-15 bg-overlay bg-overlay2"
+      class="mt-15 mb-15 mb-sm-15 mb-md-15 mb-lg-15 bg-overlay bg-overlay2"
       style="position: relative; z-index:1"
     >
-      <v-container class="mt-0 mt-lg-10 mt-md-10">
+      <v-container class="mt-0 mt-lg-5 mt-md-10">
         <v-row align="center">
           <v-col
             class="my-lg-10 my-md-10 pt-10 pt-5 mx-sm-auto mx-md-start mx-lg-start mx-auto"
-            cols="12"
+            cols="11"
             lg="9"
             md="6"
-            sm="7"
+            sm="8"
             order="2"
             order-sm="2"
             order-md="1"
@@ -25,7 +25,10 @@
               <v-card-title
                 class="py-0 font-weight-medium headline teal--text text--darken-2"
               >
-                <span style="border-bottom:6px solid #64B5F6;">
+                <span
+                  class="text-truncate"
+                  style="border-bottom:6px solid #64B5F6;"
+                >
                   Web & Community Building!
                 </span>
               </v-card-title>
@@ -35,11 +38,17 @@
                   to="/about"
                   >About</v-btn
                 >
-                <v-btn
+                <!-- <v-btn
                   class="blue--text px-2 px-sm-5 px-md-5 px-lg-5"
                   outlined
                   :href="'mailto:' + userData.email"
                   >Let's Connect</v-btn
+                > -->
+                <v-btn
+                  class="blue--text px-2 px-sm-5 px-md-5 px-lg-5"
+                  outlined
+                  to="/workspace"
+                  >See work</v-btn
                 >
               </v-card-actions>
               <v-card-actions class="d-flex align-center">
@@ -76,6 +85,7 @@
             order-lg="2"
           >
             <v-img
+              lazy
               class="rounded-circle"
               :src="userData.profilePhotoURL"
               max-width="250"

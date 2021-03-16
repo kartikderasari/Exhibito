@@ -1,25 +1,43 @@
 <template>
-  <v-container>
-    <v-card class="mx-3 mt-5" max-width="280" elevation="5">
-      <v-img
-        height="150"
-        src="https://wallpapercave.com/wp/qr0bJYf.jpg"
-      ></v-img>
+  <v-container fluid>
+    <v-card
+      class="mt-5 d-flex flex-column"
+      width="280"
+      elevation="5"
+      height="400"
+    >
+      <v-row no-gutters>
+        <v-col cols="12">
+          <v-img
+            class="rounded-t grey lighten-4"
+            height="22vh"
+            :src="project.projectImageURL"
+            lazy
+          ></v-img>
 
-      <v-card-title class="pb-0"> {{ project.title }} </v-card-title>
+          <v-card-title class="pb-0 teal--text text--darken-2">
+            {{ project.title }}
+          </v-card-title>
 
-      <v-card-text>
-        {{ project.brief }}
-      </v-card-text>
-      <v-row>
-        <v-col>
-          <v-card-actions class="pl-4">
-            <v-chip small> {{ project.techStack }} </v-chip>
+          <v-card-text v-if="project.brief.length < 120" class="py-0 subtitle">
+            {{ project.brief }}
+          </v-card-text>
+          <v-card-text v-else class="py-0 subtitle">
+            {{ project.brief.slice(0, 120) }}...
+          </v-card-text>
+        </v-col>
+
+        <v-col class="d-flex flex-column justify-end" cols="12">
+          <v-card-actions class="pl-4 d-flex flex-wrap">
+            <v-chip class="mb-1 mr-1" small>
+              {{ project.techStack }}
+            </v-chip>
           </v-card-actions>
           <v-divider class="mx-4"></v-divider>
-          <v-card-actions class="pl-4">
+          <v-card-actions class="pl-4 d-flex flex-wrap pb-3">
             <v-btn
               class="blue white--text"
+              elevation="0"
               small
               target="_blank"
               :href="project.liveURL"

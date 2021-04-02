@@ -3,7 +3,7 @@
     <v-card class="mx-auto" color="transparent" flat>
       <v-row>
         <v-card-title
-          class="py-0 pl-8 font-weight-medium headline teal--text text--darken-2"
+          class="py-0 pl-8 font-weight-medium headline text--secondary"
         >
           Projects
         </v-card-title>
@@ -45,7 +45,7 @@ export default {
   }),
   components: { ProjectCard },
   methods: {
-    readProjectData: function() {
+    readProjectData: function () {
       this.loading = true;
       this.projects = [];
       FDK.firestore()
@@ -57,7 +57,7 @@ export default {
         .then(() => (this.loading = false));
     },
   },
-  created: function() {
+  created: function () {
     this.readProjectData();
   },
 };

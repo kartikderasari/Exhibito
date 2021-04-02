@@ -2,14 +2,15 @@
   <v-container fluid>
     <v-row
       class="mt-15 mb-15 mb-sm-15 mb-md-15 mb-lg-15 bg-overlay bg-overlay2"
-      style="position: relative; z-index:1"
+      style="position: relative; z-index: 1"
     >
       <v-container class="mt-0 mt-lg-5 mt-md-10">
         <v-row align="center">
           <v-col
-            class="my-lg-10 my-md-10 pt-10 pt-5 mx-sm-auto mx-md-start mx-lg-start mx-auto"
+            class="my-lg-10 my-md-10 pt-10 pt-15 mx-sm-auto mx-md-start mx-lg-start mx-auto"
             cols="11"
-            lg="9"
+            xl="8"
+            lg="8"
             md="6"
             sm="8"
             order="2"
@@ -18,16 +19,18 @@
             order-lg="1"
           >
             <v-card flat color="transparent">
-              <v-card-text class="py-0 title font-weight-normal ">
+              <v-card-text
+                class="py-0 title text--secondary font-weight-normal"
+              >
                 Hello, I'm {{ userData.name }}! <br />
                 Talk to me about
               </v-card-text>
               <v-card-title
-                class="py-0 font-weight-medium headline teal--text text--darken-2"
+                class="py-0 font-weight-medium headline text--secondary text--darken-2"
               >
                 <span
                   class="text-truncate"
-                  style="border-bottom:6px solid #64B5F6;"
+                  style="border-bottom: 6px solid #64b5f6"
                 >
                   Web & Community Building!
                 </span>
@@ -38,12 +41,6 @@
                   to="/about"
                   >About</v-btn
                 >
-                <!-- <v-btn
-                  class="blue--text px-2 px-sm-5 px-md-5 px-lg-5"
-                  outlined
-                  :href="'mailto:' + userData.email"
-                  >Let's Connect</v-btn
-                > -->
                 <v-btn
                   class="blue--text px-2 px-sm-5 px-md-5 px-lg-5"
                   outlined
@@ -85,7 +82,6 @@
             order-lg="2"
           >
             <v-img
-              lazy
               class="rounded-circle"
               :src="userData.profilePhotoURL"
               max-width="250"
@@ -116,7 +112,7 @@
   background: url("../assets/gr_below.svg") no-repeat;
   background-size: 27vw 13vw;
   position: absolute;
-  bottom: -9vw;
+  bottom: -12vw;
   left: 0px;
   width: 27vw;
   height: 13vw;

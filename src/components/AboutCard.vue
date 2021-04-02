@@ -3,7 +3,7 @@
     <v-card class="py-10 px-8 rounded-lg" outlined flat rounded>
       <v-row>
         <v-card-title
-          class="py-0 pl-0 font-weight-medium headline teal--text text--darken-2"
+          class="py-0 pl-0 font-weight-medium headline text--secondary"
         >
           About
         </v-card-title>
@@ -19,7 +19,9 @@
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="8">
           <v-card-text class="pl-0 ml-0">
-            <h3 class="py-0 font-weight-medium title teal--text text--darken-2">
+            <h3
+              class="py-0 font-weight-medium title text--secondary teal--text"
+            >
               Hello, I'm {{ userData.name }}!
             </h3>
             {{ userData.about }}

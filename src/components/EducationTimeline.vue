@@ -2,9 +2,7 @@
   <v-container>
     <v-card flat>
       <v-row>
-        <v-card-title
-          class="pl-8 font-weight-medium headline teal--text text--darken-2"
-        >
+        <v-card-title class="pl-8 font-weight-medium headline text--secondary">
           Education
         </v-card-title>
       </v-row>

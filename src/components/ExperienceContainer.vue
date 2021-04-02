@@ -11,7 +11,7 @@
     <v-card class="py-10 px-8" flat color="transparent" v-if="!loading">
       <v-row>
         <v-card-title
-          class="pb-3 pl-0 font-weight-medium headline teal--text text--darken-2"
+          class="pb-3 pl-0 font-weight-medium headline text--secondary"
         >
           Experience
         </v-card-title>
@@ -44,7 +44,7 @@ export default {
   },
   components: { ExperienceCard },
   methods: {
-    readExpData: function() {
+    readExpData: function () {
       this.loading = true;
       this.experiences = [];
       FDK.firestore()
@@ -58,7 +58,7 @@ export default {
         .then(() => (this.loading = false));
     },
   },
-  created: function() {
+  created: function () {
     this.readExpData();
   },
 };

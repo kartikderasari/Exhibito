@@ -11,8 +11,7 @@
     </v-row>
     <v-card class="py-5 px-8" color="transparent" flat v-if="!loading">
       <v-row>
-        <v-card-title
-          class="font-weight-medium pl-0 headline teal--text text--darken-2"
+        <v-card-title class="font-weight-medium pl-0 headline text--secondary"
           >Tech-Stack</v-card-title
         >
         <v-card-text class="d-flex justify-center flex-wrap align-center">
@@ -40,7 +39,7 @@ export default {
     };
   },
   methods: {
-    readSkillsData: function() {
+    readSkillsData: function () {
       this.loading = true;
       this.skills = [];
       FDK.firestore()
@@ -50,7 +49,7 @@ export default {
         .then(() => (this.loading = false));
     },
   },
-  mounted: function() {
+  mounted: function () {
     this.readSkillsData();
   },
 };

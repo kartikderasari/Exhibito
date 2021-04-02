@@ -9,7 +9,7 @@
           md="6"
           lg="6"
         >
-          <span class="title font-weight-medium grey--text text--darken-1">
+          <span class="title font-weight-medium text--secondary">
             {{ userData.name }}
           </span>
         </v-col>
@@ -39,10 +39,7 @@
             <v-icon>mdi-twitter</v-icon>
           </v-btn>
         </v-col>
-        <v-col
-          cols="12"
-          class="text-center font-weight-medium grey--text text--darken-1"
-        >
+        <v-col cols="12" class="text-center font-weight-medium text--secondary">
           <strong
             >© Created by
             <a

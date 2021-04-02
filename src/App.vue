@@ -2,10 +2,9 @@
   <v-app>
     <Navbar :userData="userData" v-if="!loading" />
     <v-main v-if="!loading">
-      <v-divider></v-divider>
       <router-view :userData="userData"> </router-view>
     </v-main>
-    <Footer :userData="userData" v-if="!loading" />
+    <Footer :userData="userData" v-if="!loading && this.$route.path != '/'" />
     <BottomNav />
     <v-progress-circular
       class="mx-auto my-15 py-15"
@@ -30,7 +29,7 @@ export default {
     loading: false,
   }),
   methods: {
-    readUserInfoData: function() {
+    readUserInfoData: function () {
       this.loading = true;
       FDK.firestore()
         .collection("userInfo")
@@ -40,7 +39,7 @@ export default {
         .then(() => (this.loading = false));
     },
   },
-  created: function() {
+  created: function () {
     this.readUserInfoData();
   },
 };

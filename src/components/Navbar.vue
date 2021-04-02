@@ -1,10 +1,10 @@
 <template>
-  <v-app-bar app color="white" flat dense>
-    <div class="headline text-no-wrap pt-1" style="width: 250px;">
+  <v-app-bar app color="white" elevate-on-scroll dense>
+    <div class="headline text-no-wrap pt-1" style="width: 250px">
       <router-link
-        class="font-weight-medium teal--text text-decoration-none"
+        class="font-weight-medium text--secondary text-decoration-none"
         to="/"
-        style="width: 250px;"
+        style="width: 250px"
       >
         {{ userData.name }}
       </router-link>

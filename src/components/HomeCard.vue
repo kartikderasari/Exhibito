@@ -35,7 +35,69 @@
                   Web & Community Building!
                 </span>
               </v-card-title>
-              <v-card-actions class="ml-2 mt-2">
+              <v-card-text
+                class="pb-0 pt-2 font-weight-medium subtitle-2"
+                style="max-width: 700px"
+              >
+                {{ userData.shortBio }}
+              </v-card-text>
+              <v-card-actions class="d-flex align-center py-0">
+                <v-btn
+                  icon
+                  :href="'mailto:' + userData.email"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Mail"
+                >
+                  <v-icon>mdi-email</v-icon>
+                </v-btn>
+                <v-btn
+                  icon
+                  :href="userData.Facebook"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Facebook"
+                >
+                  <v-icon>mdi-facebook</v-icon>
+                </v-btn>
+                <v-btn
+                  icon
+                  :href="userData.Instagram"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Instagram"
+                >
+                  <v-icon>mdi-instagram</v-icon>
+                </v-btn>
+                <v-btn
+                  icon
+                  :href="userData.LinkedIn"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="LinkedIn"
+                >
+                  <v-icon>mdi-linkedin</v-icon>
+                </v-btn>
+                <v-btn
+                  icon
+                  :href="userData.GitHub"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="GitHub"
+                >
+                  <v-icon>mdi-github</v-icon>
+                </v-btn>
+                <v-btn
+                  icon
+                  :href="userData.Twitter"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Twitter"
+                >
+                  <v-icon>mdi-twitter</v-icon>
+                </v-btn>
+              </v-card-actions>
+              <v-card-actions class="ml-2">
                 <v-btn
                   class="blue mr-2 white--text px-2 px-sm-5 px-md-5 px-lg-5"
                   to="/about"
@@ -47,26 +109,6 @@
                   to="/workspace"
                   >See work</v-btn
                 >
-              </v-card-actions>
-              <v-card-actions class="d-flex align-center">
-                <v-btn icon :href="'mailto:' + userData.email" target="_blank">
-                  <v-icon>mdi-email</v-icon>
-                </v-btn>
-                <v-btn icon :href="userData.Facebook" target="_blank">
-                  <v-icon>mdi-facebook</v-icon>
-                </v-btn>
-                <v-btn icon :href="userData.Instagram" target="_blank">
-                  <v-icon>mdi-instagram</v-icon>
-                </v-btn>
-                <v-btn icon :href="userData.LinkedIn" target="_blank">
-                  <v-icon>mdi-linkedin</v-icon>
-                </v-btn>
-                <v-btn icon :href="userData.GitHub" target="_blank">
-                  <v-icon>mdi-github</v-icon>
-                </v-btn>
-                <v-btn icon :href="userData.Twitter" target="_blank">
-                  <v-icon>mdi-twitter</v-icon>
-                </v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -85,6 +127,7 @@
               class="rounded-circle"
               :src="userData.profilePhotoURL"
               max-width="250"
+              height="auto"
             >
             </v-img>
           </v-col>

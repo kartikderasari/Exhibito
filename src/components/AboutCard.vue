@@ -28,17 +28,18 @@
           </v-card-text>
           <v-card-actions class="pl-0 py-0">
             <v-btn
-              class="blue white--text px-2 px-sm-5 px-md-5 px-lg-5"
+              class="purple white--text px-2 px-sm-5 px-md-5 px-lg-5"
               to="workspace"
               >See Work</v-btn
             >
             <v-btn
               outlined
+              color="purple"
               class="px-2 px-sm-5 px-md-5 px-lg-5"
-              color="blue"
               :href="'mailto:' + userData.email"
-              >Contact</v-btn
-            >
+              >Contact
+              <v-icon right> mdi-open-in-new </v-icon>
+            </v-btn>
           </v-card-actions>
         </v-col>
       </v-row>

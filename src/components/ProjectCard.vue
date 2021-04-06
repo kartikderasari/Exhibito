@@ -36,20 +36,24 @@
           <v-divider class="mx-4"></v-divider>
           <v-card-actions class="pl-4 d-flex flex-wrap pb-3">
             <v-btn
-              class="blue white--text"
+              class="purple white--text"
               elevation="0"
               small
               target="_blank"
               :href="project.liveURL"
+              rel="noreferrer noopener"
+              aria-label="Project URL"
             >
               View Project
             </v-btn>
             <v-btn
-              color="blue"
+              color="purple"
               text
               small
               target="_blank"
               :href="project.githubURL"
+              rel="noreferrer noopener"
+              aria-label="GitHub URL"
             >
               View Code
             </v-btn>

@@ -2,9 +2,9 @@
   <v-container fluid>
     <v-card
       class="mt-5 d-flex flex-column"
-      width="280"
-      elevation="5"
-      height="400"
+      elevation="2"
+      outlined
+      min-height="400"
     >
       <v-row no-gutters>
         <v-col cols="12">
@@ -23,7 +23,7 @@
             {{ project.brief }}
           </v-card-text>
           <v-card-text v-else class="py-0 subtitle">
-            {{ project.brief.slice(0, 120) }}...
+            {{ project.brief.slice(0, 160) }}...
           </v-card-text>
         </v-col>
 

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card class="py-10 px-8 rounded-lg" outlined flat rounded>
+    <v-card class="py-10 px-8 rounded-lg" outlined rounded flat>
       <v-row>
         <v-card-title
           class="py-0 pl-0 font-weight-medium headline text--secondary"
@@ -24,17 +24,19 @@
             >
               Hello, I'm {{ userData.name }}!
             </h3>
-            {{ userData.about }}
+            <span class="subtitle-1 my-0">
+              {{ userData.about }}
+            </span>
           </v-card-text>
           <v-card-actions class="pl-0 py-0">
             <v-btn
-              class="purple white--text px-2 px-sm-5 px-md-5 px-lg-5"
+              class="blue mr-2 white--text px-2 px-sm-5 px-md-5 px-lg-5"
               to="workspace"
               >See Work</v-btn
             >
             <v-btn
               outlined
-              color="purple"
+              color="blue"
               class="px-2 px-sm-5 px-md-5 px-lg-5"
               :href="'mailto:' + userData.email"
               >Contact

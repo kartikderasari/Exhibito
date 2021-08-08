@@ -7,7 +7,11 @@
       <v-container class="mt-0 mt-lg-5 mt-md-10">
         <v-row align="center">
           <v-col
-            class="my-lg-10 my-md-10 pt-10 pt-15 mx-sm-auto mx-md-start mx-lg-start mx-auto"
+            class="
+              my-lg-10 my-md-10
+              pt-10 pt-15
+              mx-sm-auto mx-md-start mx-lg-start mx-auto
+            "
             cols="11"
             xl="8"
             lg="8"
@@ -19,24 +23,29 @@
             order-lg="1"
           >
             <v-card flat color="transparent">
-              <v-card-text
-                class="py-0 title text--secondary font-weight-normal"
-              >
-                Hello, I'm {{ userData.name }}! <br />
-                Talk to me about
+              <v-card-text class="py-0">
+                <span class="headline font-weight-medium">
+                  Hello, I'm {{ userData.name }}! <br />
+                  Talk to me about
+                </span>
               </v-card-text>
               <v-card-title
-                class="py-0 font-weight-medium headline text--secondary text--darken-2"
+                class="
+                  py-0
+                  font-weight-medium
+                  headline
+                  text--secondary text--darken-2
+                "
               >
                 <span
-                  class="text-truncate"
+                  class="text-truncate headline font-weight-medium"
                   style="border-bottom: 6px solid #64b5f6"
                 >
                   Web & Community Building!
                 </span>
               </v-card-title>
               <v-card-text
-                class="pb-0 pt-2 font-weight-medium subtitle-2"
+                class="pb-0 pt-2 font-weight-medium subtitle-1"
                 style="max-width: 700px"
               >
                 {{ userData.shortBio }}
@@ -137,31 +146,6 @@
   </v-container>
 </template>
 
-<style>
-.bg-overlay::before {
-  content: "";
-  background: url("../assets/gr_above.svg") no-repeat;
-  background-size: 130vw 65vh;
-  position: absolute;
-  top: -5vh;
-  right: 0px;
-  width: 84vw;
-  height: 65vh;
-  z-index: -2;
-}
-
-.bg-overlay2::after {
-  content: "";
-  background: url("../assets/gr_below.svg") no-repeat;
-  background-size: 27vw 13vw;
-  position: absolute;
-  bottom: -12vw;
-  left: 0px;
-  width: 27vw;
-  height: 13vw;
-  z-index: -2;
-}
-</style>
 
 <script>
 export default {

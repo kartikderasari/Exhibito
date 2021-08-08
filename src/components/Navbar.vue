@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="white" elevate-on-scroll dense>
+  <v-app-bar app color="white" elevate-on-scroll>
     <div class="headline text-no-wrap pt-1" style="width: 250px">
       <router-link
         class="font-weight-medium text--secondary text-decoration-none"

@@ -2,19 +2,19 @@
   <v-container fluid>
     <v-row>
       <v-col class="grey lighten-4" cols="12">
-        <ExperienceContainer />
+        <VolunteeringContainer :volunteering="volunteering" />
       </v-col>
     </v-row>
     <v-row no-gutters>
-      <v-col class="half-bg my-16" cols="12">
-        <ProjectContainer />
+      <v-col class="my-16" cols="12">
+        <ProjectContainer :projects="projects" />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import ExperienceContainer from "@/components/ExperienceContainer.vue";
+import VolunteeringContainer from "@/components/VolunteeringContainer.vue";
 import ProjectContainer from "@/components/ProjectContainer.vue";
 
 export default {
@@ -24,8 +24,8 @@ export default {
       model: 0,
     };
   },
-  components: { ExperienceContainer, ProjectContainer },
-  methods: {},
+  components: { VolunteeringContainer, ProjectContainer },
+  props: ["volunteering", "projects"],
 };
 </script>
 

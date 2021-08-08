@@ -15,13 +15,20 @@
           >Tech-Stack</v-card-title
         >
         <v-card-text class="d-flex justify-center flex-wrap align-center">
-          <div v-for="(skill, index) in skills" :key="index">
-            <v-img
-              class="ma-2"
-              :src="skill.skillLogoURL"
-              width="6vh"
-              lazy
-            ></v-img>
+          <div v-for="(skill, index) in techStack" :key="index">
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-img
+                  class="mx-8 my-5"
+                  :src="skill.skillLogoURL"
+                  width="5vw"
+                  lazy
+                  v-bind="attrs"
+                  v-on="on"
+                ></v-img>
+              </template>
+              <span>{{ skill.skill }}</span>
+            </v-tooltip>
           </div>
         </v-card-text>
       </v-row>
@@ -30,7 +37,6 @@
 </template>
 
 <script>
-import FDK from "@/config/firebase.js";
 export default {
   data: () => {
     return {
@@ -38,19 +44,6 @@ export default {
       loading: false,
     };
   },
-  methods: {
-    readSkillsData: function () {
-      this.loading = true;
-      this.skills = [];
-      FDK.firestore()
-        .collection("skills")
-        .get()
-        .then((doc) => doc.forEach((doc) => this.skills.push(doc.data())))
-        .then(() => (this.loading = false));
-    },
-  },
-  mounted: function () {
-    this.readSkillsData();
-  },
+  props: ["techStack"],
 };
 </script>

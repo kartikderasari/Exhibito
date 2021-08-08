@@ -1,0 +1,61 @@
+<template>
+  <v-container>
+    <v-card flat class="py-5" color="transparent">
+      <v-row>
+        <v-card-title class="pl-8 font-weight-medium headline text--secondary">
+          Experience
+        </v-card-title>
+      </v-row>
+      <v-row>
+        <v-timeline class="pt-0 mt-4 mx-auto" align-top dense>
+          <v-timeline-item
+            small
+            color="blue"
+            v-for="(exp, index) in experiences"
+            :key="index"
+          >
+            <v-card color="blue" dark max-width="900">
+              <v-row class="pa-2" no-gutters>
+                <v-col
+                  v-if="width > 690"
+                  cols="2"
+                  class="d-flex justify-center"
+                >
+                  <v-img
+                    class="rounded-circle"
+                    :src="exp.companyLogoURL"
+                    max-width="80"
+                    max-height="80"
+                  ></v-img>
+                </v-col>
+                <v-col cols="12" sm="10" md="10" lg="10">
+                  <v-card-title class="flex-column align-start py-2">
+                    <div class="text-h6">
+                      {{ exp.designation }}, {{ exp.companyName }}
+                    </div>
+                    <small>{{ exp.start }} - {{ exp.end }}</small>
+                  </v-card-title>
+                </v-col>
+              </v-row>
+
+              <v-card-text class="white text--primary pt-3">
+                {{ exp.brief }}
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+        </v-timeline>
+      </v-row>
+    </v-card>
+  </v-container>
+</template>
+
+<script>
+export default {
+  computed: {
+    width() {
+      return this.$vuetify.breakpoint.width;
+    },
+  },
+  props: ["experiences"],
+};
+</script>

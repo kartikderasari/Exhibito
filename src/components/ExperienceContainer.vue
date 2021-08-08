@@ -34,32 +34,13 @@
 
 <script>
 import ExperienceCard from "@/components/ExperienceCard.vue";
-import FDK from "@/config/firebase.js";
 export default {
   data: () => {
     return {
       loading: false,
-      experiences: null,
     };
   },
   components: { ExperienceCard },
-  methods: {
-    readExpData: function () {
-      this.loading = true;
-      this.experiences = [];
-      FDK.firestore()
-        .collection("experiences")
-        .get()
-        .then((doc) => {
-          doc.forEach((doc) =>
-            this.experiences.push({ id: doc.id, ...doc.data() })
-          );
-        })
-        .then(() => (this.loading = false));
-    },
-  },
-  created: function () {
-    this.readExpData();
-  },
+  props: ["experiences"],
 };
 </script>

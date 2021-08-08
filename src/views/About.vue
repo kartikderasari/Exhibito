@@ -7,12 +7,12 @@
     </v-row>
     <v-row>
       <v-col class="grey lighten-4 my-5" cols="12">
-        <TechStack />
+        <ExperienceTimeline :experiences="experiences" />
       </v-col>
     </v-row>
     <v-row>
       <v-col class="my-5" cols="12">
-        <EducationTimeline />
+        <TechStack :techStack="techStack" />
       </v-col>
     </v-row>
   </v-container>
@@ -22,8 +22,8 @@
 .half-bg {
   background: linear-gradient(
     to bottom,
-    #64b5f6 0%,
-    #90caf9 50%,
+    #f5f5f5 0%,
+    #f5f5f5 50%,
     white 50%,
     white 100%
   );
@@ -33,9 +33,17 @@
 <script>
 import AboutCard from "@/components/AboutCard.vue";
 import TechStack from "@/components/TechStack.vue";
-import EducationTimeline from "@/components/EducationTimeline.vue";
+// import EducationTimeline from "@/components/EducationTimeline.vue";
+// import ExperienceContainer from "@/components/ExperienceContainer.vue";
+import ExperienceTimeline from "@/components/ExperienceTimeline.vue";
 export default {
-  components: { AboutCard, TechStack, EducationTimeline },
-  props: ["userData"],
+  components: {
+    AboutCard,
+    TechStack,
+    // EducationTimeline,
+    // ExperienceContainer,
+    ExperienceTimeline,
+  },
+  props: ["userData", "techStack", "education", "experiences"],
 };
 </script>

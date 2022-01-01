@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-card
-      class="mt-5 d-flex flex-column"
+      class="d-flex flex-column"
       elevation="2"
       outlined
       min-height="400"
@@ -12,24 +12,31 @@
             class="rounded-t grey lighten-4"
             height="22vh"
             :src="project.projectImageURL"
+            :lazy-src="project.projectImageURL"
             lazy
           ></v-img>
 
-          <v-card-title class="pb-0 teal--text text--darken-2">
+          <v-card-title>
+            <span class="heading">
             {{ project.title }}
+            </span>
           </v-card-title>
 
-          <v-card-text v-if="project.brief.length < 120" class="py-0 subtitle">
+          <v-card-text v-if="project.brief.length < 120" class="text-justify">
+            <span class="content">
             {{ project.brief }}
+            </span>
           </v-card-text>
-          <v-card-text v-else class="py-0 subtitle">
-            {{ project.brief.slice(0, 160) }}...
+          <v-card-text v-else class="text-justify">
+            <span class="content">
+            {{ project.brief.slice(0, 180) }}...
+            </span>
           </v-card-text>
         </v-col>
 
         <v-col class="d-flex flex-column justify-end" cols="12">
           <v-card-actions class="pl-4 d-flex flex-wrap">
-            <v-chip class="mb-1 mr-1" small>
+            <v-chip class="mb-1 mr-1 lato-font" small>
               {{ project.techStack }}
             </v-chip>
           </v-card-actions>

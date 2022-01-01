@@ -1,13 +1,18 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col class="grey lighten-4" cols="12">
-        <VolunteeringContainer :volunteering="volunteering" />
+    <!-- <v-row>
+      <v-col class="mx-auto" cols="12" md="12" sm="12" lg="10" xl="10">
+        <BlogContainer :projects="projects" />
+      </v-col>
+    </v-row> -->
+    <v-row class="grey lighten-4">
+      <v-col class="mx-auto" cols="12" md="12" sm="12" lg="10" xl="10">
+        <ProjectContainer :projects="projects" />
       </v-col>
     </v-row>
-    <v-row no-gutters>
-      <v-col class="my-16" cols="12">
-        <ProjectContainer :projects="projects" />
+    <v-row>
+      <v-col class="mx-auto" cols="12" md="12" sm="12" lg="10" xl="10">
+        <VolunteeringContainer :volunteering="volunteering" />
       </v-col>
     </v-row>
   </v-container>
@@ -16,6 +21,7 @@
 <script>
 import VolunteeringContainer from "@/components/VolunteeringContainer.vue";
 import ProjectContainer from "@/components/ProjectContainer.vue";
+// import BlogContainer from "@/components/BlogContainer.vue";
 
 export default {
   data: () => {

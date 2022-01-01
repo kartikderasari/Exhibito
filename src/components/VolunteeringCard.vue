@@ -2,30 +2,30 @@
   <v-dialog v-model="dialog" width="700" retain-focus>
     <template v-slot:activator="{ on, attrs }">
       <v-card
-        class="rounded-lg"
-        outlined
-        flat
+        elevation="2"
+        class="rounded-lg grey lighten-4"
         v-bind="attrs"
         v-on="on"
-        height="150"
+        max-height="150"
       >
         <v-card-text>
-          <v-row class="my-auto" justify="center">
+          <v-row>
             <v-col cols="4" align="center">
               <v-img
                 class="rounded-xl"
+                :lazy-src="volunteering.companyLogoURL"
                 :src="volunteering.companyLogoURL"
-                max-width="120"
-                max-height="120"
+                width="120"
+                height="auto"
                 lazy
               ></v-img>
             </v-col>
             <v-col cols="8" class="d-flex flex-column justify-center">
-              <h5 class="title text-truncate">
+              <h5 class="text-truncate heading pb-1">
                 {{ volunteering.designation }}
               </h5>
-              <p class="my-0 text-truncate">{{ volunteering.companyName }}</p>
-              <p class="my-0">
+              <p class="my-0 text-truncate lato-font content">{{ volunteering.companyName }}</p>
+              <p class="my-0 lato-font">
                 {{ volunteering.start }} - {{ volunteering.end }}
               </p>
             </v-col>
@@ -46,19 +46,21 @@
             ></v-img>
           </v-col>
           <v-col cols="9" class="">
-            <h5 class="title">
+            <h5 class="heading pb-2">
               {{ volunteering.designation }}
             </h5>
-            <p class="my-0">{{ volunteering.companyName }}</p>
-            <p class="my-0">
+            <p class="my-0 content">{{ volunteering.companyName }}</p>
+            <p class="my-0 lato-font">
               {{ volunteering.start }} - {{ volunteering.end }}
             </p>
           </v-col>
         </v-row>
       </v-card-text>
 
-      <v-card-text>
+      <v-card-text class="text-justify">
+        <span class="content">
         {{ volunteering.brief }}
+        </span>
       </v-card-text>
 
       <v-divider></v-divider>

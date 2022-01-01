@@ -1,13 +1,13 @@
 <template>
-  <v-container>
+  <v-container class="py-8">
     <v-row>
       <v-card-title
-        class="py-0 pl-8 font-weight-medium headline text--secondary"
+        class="pt-5 pl-8 font-weight-medium headline text--secondary"
       >
         Projects
       </v-card-title>
     </v-row>
-    <v-card class="py-10 px-8" color="transparent" flat>
+    <v-card class="py-5 px-8" color="transparent" flat>
       <v-row v-if="loading">
         <v-progress-circular
           class="mx-auto my-10"

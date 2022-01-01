@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lato&family=Source+Code+Pro&family=Montserrat+Alternates&display=swap");
+
+.acme-font {
+  font-family: "Acme", sans-serif;
+}
+
+.code-font {
+  font-family: "Source Code Pro", sans-serif;
+}
+
+.lato-font {
+  font-family: "Lato", sans-serif;
+  color: rgb(0, 0, 0, 0.7);
+
+}
+
+.content {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 25px;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.heading {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.grey-text {
+  color: rgb(0, 0, 0, 0.6);
+}

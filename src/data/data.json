@@ -1,0 +1,257 @@
+{
+  "userInfo": {
+    "name": "Kartik Derasari",
+    "shortBio": "Kartik is a passionate developer who loves to explore web technologies and leverage them to build tools for the community. He works in the Application Development team at MediaAgility which helps him to explore technologies such as Vue, React, Node and Google Cloud Platform at scale. He extensively contributes to various community initiatives and, his area of interest is JavaScript (MEVN, MERN), Web performance, Firebase and GCP.",
+    "about": "Connecting people over a purpose to collaborate will always lead to growth. This started making sense when Kartik started volunteering as a Community Leader. He's a young enthusiast who believes in creating impacts on students and developers under the aegis of tech. <br> With this enthusiasm, he's on a journey to prove success with the power of people. Since three years, being a Community Leader & Tech Evangelist, he has managed student leaders & programs to drive advocacy to communities. ",
+    "profilePhotoURL": "https://avatars1.githubusercontent.com/u/40170425?s=460&u=5f4e8068e8eaa19df908d03008fbf534b81bce1b&v=4",
+    "email": "derasarikartik@gmail.com",
+    "Facebook": "https://www.facebook.com/kartik.derasari.9",
+    "Instagram": "https://www.instagram.com/kartik_derasari/",
+    "LinkedIn": "https://www.linkedin.com/in/kartikderasari/",
+    "GitHub": "https://github.com/kartikderasari",
+    "Twitter": "https://twitter.com/kartik_derasari"
+  },
+  "education": [
+    {
+      "degree": "",
+      "institute": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "degree": "",
+      "institute": "",
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "techStack": [
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/html5.svg?raw=true",
+      "skill": "HTML5"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/css.svg?raw=true",
+      "skill": "CSS3"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/js.svg?raw=true",
+      "skill": "JavaScript"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/bootstrap.svg?raw=true",
+      "skill": "Bootstrap"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/vue.svg?raw=true",
+      "skill": "Vue.js"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/vuetify.svg?raw=true",
+      "skill": "Vuetify"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/react.png?raw=true",
+      "skill": "React"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/express.svg?raw=true",
+      "skill": "Express.js"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/nodejs.svg?raw=true",
+      "skill": "Node.js"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/git.png?raw=true",
+      "skill": "Git"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/elasticsearch.svg?raw=true",
+      "skill": "Elasticsearch"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/mongodb.svg?raw=true",
+      "skill": "MongoDB"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/gcp.svg?raw=true",
+      "skill": "Google Cloud Platform"
+    },
+    {
+      "skillLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Techstack/firebase.svg?raw=true",
+      "skill": "Firebase"
+    }
+  ],
+  "volunteering": [
+    {
+      "brief": "Leading a community of Google Cloud professionals, delivered more than 15 community events, discussions, and conferences while setting-up various community programs and initiatives, managing communication and growing the community strength.",
+      "end": "Present",
+      "companyWebsiteURL": "https://gdg.community.dev/gdg-cloud-ahmedabad/",
+      "start": "Sep 2019",
+      "designation": "Community Organizer - Google Developers Group",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/google.jpg?raw=true",
+      "companyName": "Google"
+    },
+    {
+      "brief": "Managed to launch and lead a university-based community group for students while delivering events on open-source and Google developer technologies to help them build their knowledge while building relationships, and demonstrating technologies with the help of community programs by the Google Developer Relations team.",
+      "companyWebsiteURL": "https://developers.google.com/community/dsc",
+      "end": "April 2021",
+      "start": "Aug 2020",
+      "companyName": "Google",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/google.jpg?raw=true",
+      "designation": "Google DSC Lead"
+    },
+    {
+      "start": "July 2019",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/explore-ml.jpg?raw=true",
+      "brief": "Advocated Google AI’s ML-Edu program, demonstrating Machine Learning & TensorFlow to 2000+ student developers while delivering mentorship and more than 10 events independently. While achieving a position on the Wall of Fame of Top contributors, designed and launched an MVP which was invited to receive Mentorship from Google Developer Experts & Google for Start-up Mentors.",
+      "end": "Feb 2020",
+      "companyWebsiteURL": "https://events.withgoogle.com/explore-ml-in/",
+      "designation": "ML Facilitator",
+      "companyName": "Google AI | Explore ML Program"
+    },
+    {
+      "brief": "Being the Head of Community, supervise all the community operations while managing and guiding bunch of team leads, increasing the community presence by 400% and successfully delivering community programs for student developers.",
+      "end": "Jan 2021",
+      "companyWebsiteURL": "https://ieee.socet.edu.in/",
+      "start": "March 2020",
+      "designation": "Chairperson",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/sou-ieee-sb.jpg?raw=true",
+      "companyName": "SOU IEEE SB"
+    },
+    {
+      "brief": "Achieved a leadership position in a national council of the world’s largest technical professional organization from 719 nominations while enabling community relations with industries to deliver community programs and campaigns at a great scale.",
+      "end": "Dec 2020",
+      "companyWebsiteURL": "https://site.ieee.org/indiacouncil/",
+      "start": "April 2020",
+      "designation": "Industry Relations Manager",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/ieee-india-council.jpg?raw=true",
+      "companyName": "IEEE India Council"
+    },
+    {
+      "brief": "",
+      "end": "April 2021",
+      "companyWebsiteURL": "https://ieee-collabratec.ieee.org/",
+      "start": "June 2019",
+      "designation": "Lead Ambassador - IEEE Collabratec",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/ieee%20(2).jpg?raw=true",
+      "companyName": "IEEE"
+    },
+    {
+      "brief": "Managed launching a community of student developers interested in open-source and technologies by Microsoft, facilitating them with various initiatives and campaigns upon their interest and feedback.",
+      "end": "April 2021",
+      "companyWebsiteURL": "https://studentambassadors.microsoft.com/",
+      "start": "Sep 2019",
+      "designation": "Microsoft Learn Student Ambassador",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/mlsa.jpg?raw=true",
+      "companyName": "Microsoft"
+    },
+    {
+      "brief": "",
+      "end": "April 2021",
+      "companyWebsiteURL": "https://silveroakuni.ac.in/",
+      "start": "August 2019",
+      "designation": "Teaching Assistant",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/sou.jpg?raw=true",
+      "companyName": "Silver Oak University"
+    },
+    {
+      "brief": "",
+      "end": "April 2021",
+      "companyWebsiteURL": "",
+      "start": "May 2019",
+      "designation": "Campus Evangelist",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/hackerearth.jpg?raw=true",
+      "companyName": "HackerEarth"
+    },
+    {
+      "brief": "Being one of the mentor of TensorFlow in Google's Global online competition for 13 to 17-year-old Pre-University students, I'll be facilitating and mentoring them to contribute towards Open Source.",
+      "end": "Jan 2020",
+      "companyWebsiteURL": "https://codein.withgoogle.com/archive/",
+      "start": "Nov 2019",
+      "designation": "Mentor for TensorFlow",
+      "companyLogoURL": "https://github.com/kartikderasari/Portfolio-Assets/blob/main/Volunteering/google-code-in.jpg?raw=true",
+      "companyName": "Google Code In"
+    }
+  ],
+  "experiences": [
+    {
+      "brief": "<li> Working within an agile team on a Google Cloud PSO project, contributing with software engineering skills in the development of an enterprise software, following SDLC from requirement gathering through deployment. <li> Building web components, writing test cases & improving UX performance for a Single Page Application (SPA). <li> Responsible for designing and developing RESTful API services using Express/Node.js with Google Cloud Platform and Elasticsearch APIs. <li> Determining areas of improvement and enhancing the solution with best practices and methodologies.",
+      "end": "Present",
+      "companyWebsiteURL": "",
+      "start": "April 2021",
+      "designation": "Application Engineer",
+      "companyLogoURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Experience/mediaagility.png",
+      "companyName": "MediaAgility"
+    },
+    {
+      "brief": "<li>Responsible for designing and developing a minimum viable SaaS product including component-based web application using Vue.js, RESTful API services using Express, machine learning workflow and AEC software integration using Python",
+      "end": "Feb 2021",
+      "companyWebsiteURL": "https://gdg.community.dev/gdg-cloud-ahmedabad/",
+      "start": "Jan 2020",
+      "designation": "Software Engineer",
+      "companyLogoURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Experience/arkeytec.png",
+      "companyName": "Arkeytec Innovations LLP"
+    },
+    {
+      "brief": "<li>Developing Restful API services using Flask, sanitizing data and implementing machine learning algorithms to observe trends and patterns.",
+      "end": "Jan 2020",
+      "companyWebsiteURL": "https://gdg.community.dev/gdg-cloud-ahmedabad/",
+      "start": "Sep 2019",
+      "designation": "Software Intern - ML",
+      "companyLogoURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Experience/softvan.png",
+      "companyName": "Softvan Pvt Ltd"
+    }
+  ],
+  "projects": [
+    {
+      "liveURL": "https://vue-things-to-do.web.app/",
+      "techStack": "HTML | CSS | JS | Vue | Firebase",
+      "projectImageURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Projects/Things-to-do.svg?token=AJSPHOPCZRPFGWAMP3CZX33AK6VW2",
+      "title": "Things to do!",
+      "brief": "Designed and Developed an interactive web application that works as a user authentication-based task management tool, built using Vue, Cloud Firestore and Firebase Authentication.",
+      "githubURL": "https://github.com/kartikderasari/vue-things-to-do"
+    },
+    {
+      "brief": "Built a WYSIWYG Text Editor web component using Vue and Vuetify which enables the user to simply add a rich text-editor to a Vuetify project and fetch the editor content as HTML.",
+      "liveURL": "https://kartik-vue-text-editor.web.app/",
+      "projectImageURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Projects/Textify.svg",
+      "techStack": "HTML | CSS | JS | Vue | Vuetify | Firebase",
+      "githubURL": "https://kartik-vue-text-editor.web.app/",
+      "title": "Textify"
+    },
+    {
+      "liveURL": "https://exhibito-dashboard.web.app",
+      "projectImageURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Projects/Portfolio-Dashboard.svg",
+      "title": "Exhibito Dashboard",
+      "brief": "Developed a Single Page Web Application that enables the user to quickly generate a responsive SPA portfolio that can be easily managed by another responsive user-authentication based SPA Dashboard using Vue, Cloud Firestore and Firebase Authentication. ",
+      "techStack": "HTML | CSS | JS | Vue | Vuetify | Firebase",
+      "githubURL": "https://github.com/kartikderasari/Exhibito-Dashboard"
+    },
+    {
+      "title": "News Flash",
+      "brief": "News Flash is an Open-Source project to help you stay updated with the latest news across the globe! \n[CORS enabled by API on Production]",
+      "liveURL": "https://kartikderasari.github.io/News-Flash/",
+      "projectImageURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Projects/News-Flash.svg",
+      "githubURL": "https://github.com/kartikderasari/News-Flash",
+      "techStack": "HTML | CSS | JS | Bootstrap"
+    },
+    {
+      "title": "Exhibito",
+      "projectImageURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Projects/Portfolio.svg",
+      "brief": "Developed a Single Page Web Application that enables the user to quickly generate a responsive SPA portfolio that can be easily managed by another responsive user-authentication based SPA Dashboard using Vue, Cloud Firestore and Firebase Authentication.",
+      "techStack": "HTML | CSS | JS | Vue | Vuetify | Firebase",
+      "liveURL": "https://exhibito.web.app/",
+      "githubURL": "https://github.com/kartikderasari/Exhibito"
+    },
+    {
+      "projectImageURL": "https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Projects/Resume-Generator.svg?token=AJSPHONOMQ77H3EPPFWBMDDAK6VWU",
+      "liveURL": "https://kartikderasari.github.io/30-Days-of-Web/JavaScript/Capstone-Projects/Resume-Generator-v2/",
+      "brief": "Here's a simplified solution to generate a customised Professional Resume using JSON.",
+      "techStack": "HTML | CSS | JS",
+      "title": "Resume Generator",
+      "githubURL": "https://github.com/kartikderasari/30-Days-of-Web/tree/main/JavaScript/Capstone-Projects/Resume-Generator-v2"
+    }
+  ]
+}

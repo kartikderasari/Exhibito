@@ -1,10 +1,23 @@
 <template>
   <v-app>
-    <Navbar :userData="userData" v-if="!loading" />
-    <v-main v-if="!loading">
-      <router-view :userData="userData"> </router-view>
+    <Navbar :userData="data.userInfo" v-if="!loading" />
+    <v-main v-if="!loading" class="pb-0 mb-0">
+      
+        <router-view
+          :userData="data.userInfo"
+          :projects="data.projects"
+          :experiences="data.experiences"
+          :education="data.education"
+          :techStack="data.techStack"
+          :volunteering="data.volunteering"
+        >
+        </router-view>
+      <!-- </v-scroll-y-reverse-transition> -->
     </v-main>
-    <Footer :userData="userData" v-if="!loading && this.$route.path != '/'" />
+    <Footer
+      :userData="data.userInfo"
+      v-if="!loading && this.$route.path != '/'"
+    />
     <BottomNav />
     <v-progress-circular
       class="mx-auto my-15 py-15"
@@ -19,28 +32,27 @@
 <script>
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FDK from "@/config/firebase.js";
 import BottomNav from "@/components/BottomNav";
+import data from "./data/data.json";
 export default {
   name: "App",
   components: { Navbar, Footer, BottomNav },
   data: () => ({
+    data: data,
     userData: null,
     loading: false,
   }),
-  methods: {
-    readUserInfoData: function () {
-      this.loading = true;
-      FDK.firestore()
-        .collection("userInfo")
-        .doc("data")
-        .get()
-        .then((doc) => (this.userData = doc.data()))
-        .then(() => (this.loading = false));
-    },
-  },
-  created: function () {
-    this.readUserInfoData();
-  },
 };
 </script>
+
+<style>
+.scrollbar {
+  margin-left: 30px;
+  float: left;
+  height: 300px;
+  width: 65px;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+</style>

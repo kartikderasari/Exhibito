@@ -14,20 +14,23 @@
         <v-card-title class="font-weight-medium pl-0 headline text--secondary"
           >Tech-Stack</v-card-title
         >
-        <v-card-text class="d-flex justify-center flex-wrap align-center">
+        <v-card-text class="d-flex justify-center flex-wrap align-end text-center">
           <div v-for="(skill, index) in techStack" :key="index">
             <v-tooltip bottom>
               <template v-slot:activator="{ on, attrs }">
                 <v-img
                   class="mx-8 my-5"
                   :src="skill.skillLogoURL"
+                  :lazy-src="skill.skillLogoURL"
                   width="5vw"
+                  height="auto"
                   lazy
                   v-bind="attrs"
                   v-on="on"
                 ></v-img>
+                <span class="code-font" style="font-size: 1rem">{{ skill.skill }}</span>
               </template>
-              <span>{{ skill.skill }}</span>
+              <span class="code-font">{{ skill.skill }}</span>
             </v-tooltip>
           </div>
         </v-card-text>

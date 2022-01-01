@@ -1,17 +1,17 @@
 <template>
-  <v-container fluid>
+  <v-container fluid >
     <v-row class="half-bg">
-      <v-col class="my-5" cols="12">
+      <v-col class="my-5 mx-auto" cols="12" md="12" sm="12" lg="10" xl="10">
         <AboutCard :userData="userData" />
       </v-col>
     </v-row>
-    <v-row>
-      <v-col class="grey lighten-4 my-5" cols="12">
+    <v-row class="grey lighten-4">
+      <v-col class="my-5 mx-auto" cols="12" md="12" sm="12" lg="10" xl="10">
         <ExperienceTimeline :experiences="experiences" />
       </v-col>
     </v-row>
     <v-row>
-      <v-col class="my-5" cols="12">
+      <v-col class="my-5 mx-auto" cols="12" md="12" sm="12" lg="10" xl="10">
         <TechStack :techStack="techStack" />
       </v-col>
     </v-row>

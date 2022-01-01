@@ -9,23 +9,18 @@
         </v-card-title>
       </v-row>
       <v-row>
-        <v-col cols="12" sm="12" md="12" lg="4" class="d-flex align-center">
+        <v-col cols="12" sm="12" md="12" lg="5" class="d-flex align-center">
           <v-img
             class="rounded-lg"
             src="https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Profile/Cover-Image.svg?token=AJSPHONSK4ENTBWRBGVL2M3AK6VR4"
+            lazy-src="https://raw.githubusercontent.com/kartikderasari/Portfolio-Assets/main/Profile/Cover-Image.svg?token=AJSPHONSK4ENTBWRBGVL2M3AK6VR4"            
             lazy
           >
           </v-img>
         </v-col>
-        <v-col cols="12" sm="12" md="12" lg="8">
-          <v-card-text class="pl-0 ml-0">
-            <h3
-              class="py-0 font-weight-medium title text--secondary teal--text"
-            >
-              Hello, I'm {{ userData.name }}!
-            </h3>
-            <span class="subtitle-1 my-0">
-              {{ userData.about }}
+        <v-col cols="12" sm="12" md="12" lg="7">
+          <v-card-text class="pl-0 ml-0 text-justify">
+            <span class="my-0 content" v-html="userData.about">
             </span>
           </v-card-text>
           <v-card-actions class="pl-0 py-0">

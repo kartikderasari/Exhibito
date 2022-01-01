@@ -1,5 +1,5 @@
 <template>
-  <HomeCard :userData="userData" />
+  <HomeCard class="half-bg" :userData="userData" />
 </template>
 
 <script>
@@ -10,3 +10,16 @@ export default {
   props: ["userData"],
 };
 </script>
+
+<style>
+.half-bg {
+  background: linear-gradient(
+    to right,
+    #e6dace 0%,
+    #e6dace 40%,
+    white 40%,
+    white 100%
+  );
+  height: 100%;
+}
+</style>

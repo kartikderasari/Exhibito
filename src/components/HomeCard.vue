@@ -1,56 +1,51 @@
 <template>
-  <v-container fluid>
-    <v-row
-      class="mt-15 mb-15 mb-sm-15 mb-md-15 mb-lg-15 bg-overlay bg-overlay2"
-      style="position: relative; z-index: 1"
-    >
-      <v-container class="mt-0 mt-lg-5 mt-md-10">
-        <v-row align="center">
-          <v-col
-            class="
-              my-lg-10 my-md-10
-              pt-10 pt-15
-              mx-sm-auto mx-md-start mx-lg-start mx-auto
-            "
-            cols="11"
-            xl="8"
-            lg="8"
-            md="6"
-            sm="8"
-            order="2"
-            order-sm="2"
-            order-md="1"
-            order-lg="1"
-          >
-            <v-card flat color="transparent">
-              <v-card-text class="py-0">
-                <span class="headline font-weight-medium">
-                  Hello, I'm {{ userData.name }}! <br />
-                  Talk to me about
-                </span>
-              </v-card-text>
-              <v-card-title
-                class="
-                  py-0
-                  font-weight-medium
-                  headline
-                  text--secondary text--darken-2
-                "
-              >
+  <v-scroll-y-reverse-transition mode="out-in">
+    <v-container fluid class="d-flex">
+      <v-row>
+        <v-col class="my-auto" cols="10" lg="6" md="6" sm="6" xl="6">
+          <v-col class="d-flex justify-end">
+            <v-card
+              class="my-12 pa-8 py-12"
+              width="400"
+              elevation="5"
+              color="#F4ECE6"
+            >
+              <v-img
+                width="200"
+                class="rounded-circle mx-auto mb-8 elevation-5"
+                :src="userData.profilePhotoURL"
+              ></v-img>
+
+              <v-card-title>
                 <span
-                  class="text-truncate headline font-weight-medium"
-                  style="border-bottom: 6px solid #64b5f6"
+                  class="text-center mx-auto acme-font"
+                  style="
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    line-height: 40px;
+                    color: #666666;
+                  "
                 >
-                  Web & Community Building!
+                  Kartik
+                  Derasari
                 </span>
               </v-card-title>
-              <v-card-text
-                class="pb-0 pt-2 font-weight-medium subtitle-1"
-                style="max-width: 700px"
-              >
-                {{ userData.shortBio }}
+
+              <!-- <v-divider inset class="mx-15 my-0"></v-divider> -->
+
+              <v-card-text class="text-center">
+                <span
+                class="code-font"
+                  style="
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                  "
+                >
+                  Full-Stack Developer
+                </span>
               </v-card-text>
-              <v-card-actions class="d-flex align-center py-0">
+
+              <v-card-actions class="d-flex justify-center pa-0 ma-0 mt-5">
                 <v-btn
                   icon
                   :href="'mailto:' + userData.email"
@@ -106,44 +101,65 @@
                   <v-icon>mdi-twitter</v-icon>
                 </v-btn>
               </v-card-actions>
-              <v-card-actions class="ml-2">
-                <v-btn
-                  class="blue mr-2 white--text px-2 px-sm-5 px-md-5 px-lg-5"
-                  to="/about"
-                  >About</v-btn
-                >
-                <v-btn
-                  class="blue--text px-2 px-sm-5 px-md-5 px-lg-5"
-                  outlined
-                  to="/workspace"
-                  >See work</v-btn
-                >
-              </v-card-actions>
             </v-card>
           </v-col>
-          <v-col
-            class="mx-sm-auto mx-md-start mx-lg-start mx-auto"
-            cols="10"
-            lg="3"
-            md="6"
-            sm="6"
-            order="1"
-            order-sm="1"
-            order-md="2"
-            order-lg="2"
-          >
-            <v-img
-              class="rounded-circle"
-              :src="userData.profilePhotoURL"
-              max-width="250"
-              height="auto"
+        </v-col>
+        <v-col
+          class="d-flex flex-wrap align-center"
+          cols="11"
+          xl="6"
+          lg="6"
+          md="6"
+          sm="8"
+        >
+          <v-card flat color="transparent">
+            <v-card-text class="py-0">
+              <span class="font-weight-medium acme-font" style="font-size: 2rem; line-height: 40px;">
+                Hello, I'm {{ userData.name }}! <br />
+                Talk to me about
+              </span>
+            </v-card-text>
+            <v-card-title
+              class="
+                py-0
+                font-weight-medium
+                text--secondary text--darken-2
+                
+              "
             >
-            </v-img>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-row>
-  </v-container>
+              <span
+                class="text-truncate font-weight-medium acme-font"
+                style="border-bottom: 6px solid #64b5f6; font-size: 2rem; line-height: 40px;"
+              >
+                Web & Community Building!
+              </span>
+            </v-card-title>
+            <v-card-text
+              class="py-2"
+              style="max-width: 700px; text-align: justify;"
+            >
+            <span class="content">
+              {{ userData.shortBio }}
+            </span>
+            </v-card-text>
+            <v-card-actions class="ml-2">
+              <v-btn
+                class="blue mr-2 white--text px-2 px-sm-5 px-md-5 px-lg-5"
+                to="/about"
+                >About</v-btn
+              >
+              <v-btn
+                class="blue--text px-2 px-sm-5 px-md-5 px-lg-5"
+                outlined
+                to="/workspace"
+                >See work</v-btn
+              >
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-scroll-y-reverse-transition>
 </template>
 
 

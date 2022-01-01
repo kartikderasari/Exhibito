@@ -2,9 +2,9 @@
   <v-app-bar app color="white" elevate-on-scroll>
     <div class="headline text-no-wrap pt-1" style="width: 250px">
       <router-link
-        class="font-weight-medium text--secondary text-decoration-none"
+        class="text--secondary text-decoration-none acme-font"
         to="/"
-        style="width: 250px"
+        style="width: 250px; font-weight: 500; font-size: 1.9rem;"
       >
         {{ userData.name }}
       </router-link>

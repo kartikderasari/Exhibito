@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless app absolute class="grey lighten-4">
+  <v-footer  class="grey lighten-4">
     <v-container>
       <v-row no-gutters>
         <v-col
@@ -9,7 +9,7 @@
           md="6"
           lg="6"
         >
-          <span class="title font-weight-medium text--secondary">
+          <span class="heading">
             {{ userData.name }}
           </span>
         </v-col>
@@ -78,6 +78,7 @@
         <v-col cols="12" class="text-center font-weight-medium text--secondary">
           <v-divider class="pb-2"></v-divider>
           <strong
+          class="code-font"
             >© Created by
             <a
               class="text-decoration-none purple--text"
